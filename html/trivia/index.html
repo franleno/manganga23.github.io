@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <title>Trivia - Festival Manganga 2022</title>
+  </head>
+
+  <body class="bluebg">
+    <nav class="navbar navbar-expand-lg navbar-dark blackbg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../lineup/index.html">LINEUP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../historia/index.html">HISTORIA</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../trivia/index.html">TRIVIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../faq/index.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contacto/index.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../entradas/index.html">ENTRADAS</a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+
+  <main class="container-fluid contenidocentrado">
+    <div class="contenedor whitebg col-sm-10 m-auto centro">
+      <h3 id="preguntatrivia">¿CUÁNTO SABÉS?</h3>
+      <h5 id="h5trivia">PARTICIPÁ POR UN PAR DE ENTRADAS</h5>
+      <div class="col-sm-8 ml-auto mr-auto mt1">
+      <img src="../../img/trivia/trivia.jpg" class="img-fluid" alt="Trivia" id="imgtrivia">
+      </div>
+      <div class="botontrivia col-4 col-md-3 ml-auto mr-auto mt1" id="comenzar" onclick="comenzar()"><h4 class="p-0 m-0">Comenzar</h4></div>
+      <div id="botones">
+        <div class="row">
+        <div class="botontrivia col-4 ml-auto mt1" onclick="trivia('1')"><h4 id="boton1" class="p-0 m-0">boton</h4></div>
+        <div class="botontrivia col-4 mr-auto mt1" onclick="trivia('2')"><h4 id="boton2" class="p-0 m-0">boton</h4></div>
+        </div>
+        <div class="row">
+        <div class="botontrivia col-4 ml-auto mt1" onclick="trivia('3')"><h4 id="boton3" class="p-0 m-0">boton</h4></div>
+        <div class="botontrivia col-4 mr-auto mt1" onclick="trivia('4')"><h4 id="boton4" class="p-0 m-0">boton</h4></div>
+        </div>
+      </div>
+    </div>
+      <div id="fintrivia" class="whitetxt bluebg col-9 col-sm-6 col-md-4" onclick="recargarono()">
+      <p id="pfintrivia">Mensaje final</p>
+      <form method="post" enctype="text/plain" name="formulariotrivia" id="formulariotrivia" onsubmit="return validartrivia()">
+        <input type="email" id="emailtrivia" name="emailtrivia" placeholder="Ingresá tu email.">
+        <input type="submit" name="enviar" id="enviar" class="btn bluebg whitetxt" value="Enviar">
+      </form>
+      </div>
+      <div id="fondonegro"></div>
+  </main>
+
+  <footer class="blackbg whitetxt centro">Festival Manganga 2022 Copyright © Todos los derechos reservados. Diseño por <a href="../desarrollador/index.html">Francisco Leno.</a></footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../../js/js.js"></script>
+  </body>
+</html>
